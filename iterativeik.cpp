@@ -1,4 +1,11 @@
 #include "iterativeik.h"
 
-IterativeIK::IterativeIK(float errorMargin){}
-IterativeIK::~IterativeIK(){}
+IterativeIK::IterativeIK(float errorMargin)
+{
+  this->errorMargin = errorMargin;
+}
+
+IterativeIK::~IterativeIK()
+{
+
+}
