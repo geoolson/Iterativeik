@@ -1,10 +1,18 @@
+#ifndef ITERIK
+#define ITERIK
+
+const int X = 0;
+const int Y = 1;
+const int Z = 2;
 
 class IterativeIK
 {
   public:
-    IterativeIK();
+    IterativeIK(float errorMargin);
     ~IterativeIK();
-  protected:
-    float position;
-
+    void EE(float position[3]);
+    float position[3];
+    float errorMargin;
 };
+
+#endif
